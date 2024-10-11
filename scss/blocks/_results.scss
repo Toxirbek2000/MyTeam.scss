@@ -1,0 +1,56 @@
+
+.results-section {
+    padding: 140px 0;
+    background-color: #004047;
+    background-image: url("../images/result-bg-img1.svg") , url("../images/result-bg-img2.svg");
+    background-repeat: no-repeat;
+    background-size: 147px , 200px 100px;
+    background-position: calc(50% - 740px) top, calc(50% + 740px) bottom;
+}
+.results-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center; 
+    color: white;
+    margin-bottom: 56px;
+}
+.results-title > span{
+    color: #79C8C7;
+}
+.results-list {
+    display: flex;
+    justify-content: space-between;
+}
+.results-item {
+    padding-top: 36px;
+    width: 350px;
+    text-align: center;
+    background-image: url("../images/background-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 56px;
+    background-position: center top;
+}
+.resulta-item-body {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    color: white; 
+    margin-bottom: 24px;  
+}
+.resulta-item-body ~ strong{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #79C8C7;
+    margin-bottom: 2px;
+}
+.resulta-item-job {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;  
+    margin-bottom: 32px;
+}

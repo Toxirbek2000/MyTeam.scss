@@ -1,0 +1,44 @@
+.site-header {
+    padding: 71px 0 133px;
+    background-color: #014E56;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.header-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header-link{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: white;
+    transition: color 0.3s;
+}
+.header-link:hover{
+    color: #F67E7E;
+}
+.header-content-link{
+    width: 153px;
+    padding: 9px 0 11px;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px; 
+}
+.header-content-link:hover{
+    background-color: white;
+    color: black;
+}
