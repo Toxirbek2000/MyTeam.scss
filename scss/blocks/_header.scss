@@ -42,3 +42,25 @@
     background-color: white;
     color: black;
 }
+
+@media (max-width:768px){
+    .site-logo{
+        width: 128px;
+        height: 32px;
+    }
+    .header-logo-wrapper{
+        gap: 48px;
+    }
+}   
+
+@media (max-width:546px){
+    .site-header{
+        padding: 48px 0 80px;
+    }
+    .header-link , .header-list{
+        display: none;
+    }
+    .header-content-link{
+        display: block;
+    }
+}
