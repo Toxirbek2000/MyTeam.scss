@@ -1,20 +1,20 @@
 .go-section {
-    padding: 76px 0;
+    padding: 76px 76px;
     background-color: #F67E7E;
-    background-image: url("../images/go-bg-img.svg");
+    background-image: url(../images/go-bg-img.svg);
     background-repeat: no-repeat;
-    background-size: 200px 100px;
-    background-position: calc(50% - 740px) bottom;
+    background-size: 160px 120px;
+    background-position: left bottom;
 }
-.go {
+.go-wrapper {
     display: flex;
     justify-content: space-between;
 }
-.go-title > h3{
+.go-title {
     font-size: 48px;
     font-weight: 700;
-    line-height: 48px; 
-    color: #012F34; 
+    line-height: 48px;
+    color: #012F34;   
 }
 .go-link {
     width: 153px;
@@ -22,13 +22,44 @@
     border: 2px solid black;
     border-radius: 30px;
     text-align: center;
-    color: black;
     font-size: 18px;
     font-weight: 600;
-    line-height: 28px; 
-    transition: all 0.4s;  
+    line-height: 28px;
+    color: #012F34;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover{
+        background-color: #012F34;
+        color: #F67E7E;
+    }
 }
-.go-link:hover {
-    background-color: black;
-    color: #FFFFFF;
+@media (max-width:880px){
+    .go-wrapper{
+        width: 100%;
+    }
+    .go-title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width:680px){
+    .go-section{
+        padding: 83px 0;
+    }
+    .go-wrapper{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        flex-direction: column;
+    }
+    .go-title{
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    .go-link{
+        margin: 0 auto;
+        width: 100%;
+    }
 }

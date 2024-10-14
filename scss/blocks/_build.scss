@@ -1,59 +1,109 @@
 .build-section {
-    padding: 140px 0;
-    background: #012F34;
-    background-image: url("../images/build-background-img.svg");
-    background-repeat: no-repeat;
-    background-size: 100px 244px;
-    background-position: calc(50% + 740px) bottom;
+    padding: 140px 140px;
+    background-color: #012F34;
+    background-image: url(../../images/build-background-img.svg);
+    background-repeat:no-repeat;
+    background-size: 100px 200px;
+    background-position: right bottom;
 }
 .build {
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
 }
-.build > h3{
-    width: 445px;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 48px;
-    color: white;
+.build-content-left {
+    width: 445px;  
 }
-.build-title-wrapper {
-    width: 400px;
-}
-.build-title-wrapper > span{
+.build-content-left > span{
     display: inline-block;
-    margin-bottom: 54px;
     width: 50px;
     height: 4px;
     background-color: #F67E7E;
+    margin-bottom: 54px;
 }
-.build-title-wrapper h3{
+.build-content-left > h2{
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
-    color: white;   
+    color: #FFFFFF;
 }
-.build-title-item{
-    padding-bottom: 32px;
-}
-.build-content-wrapper{
+.build-content-right {
     width: 540px;
+    margin-left: 125px;
+}
+.wrap{
     display: flex;
+    align-items: center;
+    gap: 32px;
 }
-.build-item{
-    gap: 20px;
-}
-.build-item > h4{
+
+h3{
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
     color: #F67E7E;
-    padding-bottom: 16px;
+    margin-bottom: 16px;    
 }
-.build-item > p{
+p{
     font-size: 15px;
     font-weight: 600;
     line-height: 25px;
-    color:#FFFFFF;
-    opacity: 80%;
+    color: #FFFFFF; 
 }
+@media (max-width:1016px){
+    .build-section{
+        padding: 100px 0;
+        padding-left: 150px;
+        background-position: right top;
+    }
+    .build{
+        flex-direction: column;
+    }
+    .build-content-left{
+        width: 50%;
+    }
+    .build-content-right{
+        margin-left: 0;
+    }
+    .build-content-left > h2{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .wrap{
+        &:nth-child(1){
+            margin-bottom: 32px;
+        }   &:nth-child(2){
+            margin-bottom: 32px;
+        }
+    }
+    .build-content-right{
+        width: 65%;
+    }
+
+}
+
+@media (max-width:660px){
+    .build-section{
+        padding: 64px 0;
+        padding-left: 0px;
+        background-position: right top;
+    }
+    .build-content-left{
+        width: 50%;
+    }
+   .build-content-right{
+    margin: 0 auto;
+   }
+    .wrap{
+        flex-direction: column;
+        text-align: center;
+    }
+    .build-content-right{
+        width: 100%;
+    }
+    h3{
+        margin-bottom: 8px;
+    }
+
+}
+
